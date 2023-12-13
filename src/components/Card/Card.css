@@ -1,0 +1,14 @@
+.card{
+    margin: 1%;
+    width: 20%;
+    display: flex;
+}
+.card:hover{
+
+    box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.5);
+ }
+ .card-text:hover{
+    font-weight: bold;
+    text-decoration: underline;
+
+ }
