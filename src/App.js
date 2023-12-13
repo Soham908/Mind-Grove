@@ -5,8 +5,9 @@ import { Journal } from './pages/Journal';
 import { Counsellor } from './pages/Counsellor';
 import { MoodTracker } from './pages/MoodTracker';
 import { Navbar } from './components/Navbar/Navbar';
-import Login from './components/Login/Login';
-import Signup from './components/Signup/Signup';
+import Login from "./components/Login/Login.js"
+import Signup from "./components/Signup/Signup.js"
+import {Blog} from "./components/Blog/Blog"
 
 function App() {
   return (
