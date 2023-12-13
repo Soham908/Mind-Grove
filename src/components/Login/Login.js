@@ -1,14 +1,18 @@
 // src/Login.js
 import React, { useState } from 'react';
 import './Login.css';
+import {auth} from '../../config'
+import { signInWithEmailAndPassword } from '@firebase/auth';
 
-const Login = () => {
+export const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     // Add your login logic here
     console.log('Logging in with:', { username, password });
+    const user = await signInWithEmailAndPassword(auth, username, password)
+    console.log(user)
   };
 
   return (
@@ -39,4 +43,3 @@ const Login = () => {
   );
 };
 
-export default Login;
