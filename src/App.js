@@ -5,6 +5,8 @@ import { Journal } from './pages/Journal';
 import { Counsellor } from './pages/Counsellor';
 import { MoodTracker } from './pages/MoodTracker';
 import { Navbar } from './components/Navbar/Navbar';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/journal" element={<Journal />} />
         <Route path="/counsellor" element={<Counsellor />} />
         <Route path="/mood-tracking" element={<MoodTracker />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
 
     </div>
