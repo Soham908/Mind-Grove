@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import logo from "../../images/mind_grove_logo.jpg";
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,12 +39,16 @@ export const Navbar = () => {
             </li>
             <li>
               <button type="button" class="btn btn-success">
-                Login
+              <Link to="/login">
+                Login 
+                </Link>
               </button>
             </li>
             <li>
               <button type="button" class="btn btn-success">
-                Logout
+              <Link to="/signup">
+                Signup 
+                </Link>
               </button>
             </li>
           </ul>

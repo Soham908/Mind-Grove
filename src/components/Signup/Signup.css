@@ -1,0 +1,28 @@
+/* src/Signup.css */
+.signup-container {
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .signup-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
