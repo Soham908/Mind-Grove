@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-image: url('C:\Users\hp\OneDrive\Desktop\Mind-Grove\src\images\background_img.jpg');
+  background-size: cover; 
+  background-position: center;
+  /* background-color: #e0d498; */
+}
