@@ -37,20 +37,16 @@ export const Navbar = () => {
                 counsellor
               </a>
             </li>
-            <li>
-              <button type="button" class="btn btn-success">
+              <button type="button" class="but">
               <Link to="/login">
                 Login 
                 </Link>
               </button>
-            </li>
-            <li>
-              <button type="button" class="btn btn-success">
+              <button type="button" class="but2">
               <Link to="/signup">
                 Signup 
                 </Link>
               </button>
-            </li>
           </ul>
         </div>
       </div>
