@@ -30,6 +30,7 @@ git clone https://github.com/Soham908/Mind-Grove.git
 # Install dependencies
 npm install
 
+```
 
 ## Structure
 project-root/
@@ -75,6 +76,11 @@ project-root/
 
 ## Screenshots
 
+![Homepage](./public/screenshots/homepage.png)
+![Blogpage](./public/screenshots/blogpage.png)
+![Counsellor](./public/screenshots/counsellor.png)
+![Login](./public/screenshots/login.png)
+![Signup](./public/screenshots/signup.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
