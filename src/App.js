@@ -8,12 +8,18 @@ import { Navbar } from './components/Navbar/Navbar';
 import {Login} from './components/Login/Login'
 import {Signup} from './components/Signup/Signup'
 import {Blog} from "./components/Blog/Blog"
+import { createContext, useState } from 'react';
 
+export const  ApplicationContext  = createContext()
 function App() {
   
+  const [isLoggedIn, setLoggedIn] = useState(false)
+  const [blogData, setBlogData] = useState({})
   
   return (
+    <ApplicationContext.Provider  value={ { isLoggedIn, setLoggedIn, blogData, setBlogData } }>
     <div className="App">
+      {console.log(isLoggedIn)}
       <Navbar />
       <Routes >
         <Route path="/" element={<Home />} />
@@ -26,6 +32,7 @@ function App() {
       </Routes>
 
     </div>
+    </ApplicationContext.Provider>
   );
 }
 

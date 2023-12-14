@@ -1,17 +1,25 @@
 // src/Login.js
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Login.css';
 import {auth} from '../../config'
 import { signInWithEmailAndPassword } from '@firebase/auth';
+import { useNavigate } from "react-router-dom"
+import { ApplicationContext } from '../../App';
 
 export const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  const navigate = useNavigate()
+  const { setLoggedIn } = useContext(ApplicationContext)
   const handleLogin = async () => {
     // Add your login logic here
     console.log('Logging in with:', { username, password });
     const user = await signInWithEmailAndPassword(auth, username, password)
+    if (user) {
+      setLoggedIn(true)
+       navigate("/")  
+       }
+    
     console.log(user)
   };
 

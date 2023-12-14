@@ -3,15 +3,18 @@ import React, { useState } from 'react';
 import './Signup.css';
 import {auth} from "../../config"
 import { createUserWithEmailAndPassword } from '@firebase/auth';
+import { useNavigate } from 'react-router';
 
 export const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate()
 
   const handleSignup = async () => {
     // Add your signup logic here
     console.log('Signing up with:', { email, password });
     const user = await createUserWithEmailAndPassword(auth, email, password)
+    user &&  navigate("/login")
   };
 
   return (
