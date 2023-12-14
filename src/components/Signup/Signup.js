@@ -12,7 +12,6 @@ export const Signup = () => {
 
   const handleSignup = async () => {
     // Add your signup logic here
-    console.log('Signing up with:', { email, password });
     const user = await createUserWithEmailAndPassword(auth, email, password)
     user &&  navigate("/login")
   };

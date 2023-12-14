@@ -20,7 +20,6 @@ function App() {
   return (
     <ApplicationContext.Provider  value={ { isLoggedIn, setLoggedIn, blogData, setBlogData } }>
     <div className="App">
-      {console.log(isLoggedIn)}
       <Navbar />
       <Routes >
         <Route path="/" element={<Home />} />

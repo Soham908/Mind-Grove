@@ -6,7 +6,6 @@ import { ApplicationContext } from "../../App"
 export const Blog = (props) =>{
     const {blogData} = useContext(ApplicationContext)
     const navigate = useNavigate()  
-    console.log(blogData)
 
     return(
         <div className="blog-div">

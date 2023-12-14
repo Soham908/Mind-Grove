@@ -19,7 +19,7 @@
 .Counsel-card:hover{
     box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.5);
 }
-.card-img-top{
+.card-img-top-counsellor{
     height: 10%;
     width: 100%;
 }

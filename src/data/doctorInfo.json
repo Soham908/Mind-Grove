@@ -3,28 +3,28 @@
     [
         {
           "name": "Dr. John Doe",
-          "gender": "male",
+          "gender": "male1",
           "contact": "+1 (555) 123-4567",
           "description": "Experienced psychiatrist specializing in anxiety and depression.",
           "email": "john.doe@example.com"
         },
         {
           "name": "Dr. Emily Johnson",
-          "gender": "female",
+          "gender": "female1",
           "contact": "+1 (555) 987-6543",
           "description": "Passionate psychologist focusing on stress management and coping strategies.",
           "email": "emily.johnson@example.com"
         },
         {
           "name": "Dr. Michael Smith",
-          "gender": "male",
+          "gender": "male2",
           "contact": "+1 (555) 234-5678",
           "description": "Compassionate counselor skilled in family therapy and emotional well-being.",
           "email": "michael.smith@example.com"
         },
         {
           "name": "Dr. Olivia Davis",
-          "gender": "female",
+          "gender": "female2",
           "contact": "+1 (555) 876-5432",
           "description": "Dedicated psychotherapist specializing in trauma recovery and self-esteem.",
           "email": "olivia.davis@example.com"

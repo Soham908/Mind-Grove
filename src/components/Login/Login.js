@@ -13,14 +13,12 @@ export const Login = () => {
   const { setLoggedIn } = useContext(ApplicationContext)
   const handleLogin = async () => {
     // Add your login logic here
-    console.log('Logging in with:', { username, password });
     const user = await signInWithEmailAndPassword(auth, username, password)
     if (user) {
       setLoggedIn(true)
        navigate("/")  
        }
     
-    console.log(user)
   };
 
   return (

@@ -23,7 +23,6 @@ const Card = (props) => {
     case "sleepGood": imagePath = sleep; break;
 
   }
-  console.log("image url"  + imagePath)
   return (
     <div class="card">
       <img src={imagePath} className="card-img-top" alt="..." />
