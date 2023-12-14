@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import meditation from "../../images/meditation.png";
 import anxiety from "../../images/anxiety.png";
 import sleep from "../../images/sleepGood.png";
+import grief from "../../images/grief.jpg";
+import adhd from "../../images/adhd.jpg";
+
 import "./Card.css";
 import { useContext } from "react";
 import { ApplicationContext } from "../../App";
@@ -9,11 +12,13 @@ const list = [1,2,3]
 
 const Card = (props) => {
 
-  const {setBlogData} = useContext(ApplicationContext)
+  const {setBlogData, setBlogImage} = useContext(ApplicationContext)
 
   const handleReadMoreClick = () => {
     // Execute the function (setBlogData) before navigating
+    const withImageData = props.data
     setBlogData(props.data);
+    setBlogImage(imagePath)
   };
   var imagePath = null
 
@@ -21,7 +26,9 @@ const Card = (props) => {
     case "anxiety": imagePath = anxiety; break;
     case "meditation": imagePath = meditation; break;
     case "sleepGood": imagePath = sleep; break;
-
+    case "adhd": imagePath = adhd; break;
+    case "grief": imagePath = grief; break;
+    
   }
   return (
     <div class="card">

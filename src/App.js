@@ -16,9 +16,10 @@ function App() {
   
   const [isLoggedIn, setLoggedIn] = useState(false)
   const [blogData, setBlogData] = useState({})
+  const [blogImage, setBlogImage] = useState(null)
   
   return (
-    <ApplicationContext.Provider  value={ { isLoggedIn, setLoggedIn, blogData, setBlogData } }>
+    <ApplicationContext.Provider  value={ { isLoggedIn, setLoggedIn, blogData, setBlogData, blogImage, setBlogImage } }>
     <div className="App">
       <Navbar />
       <Routes >
