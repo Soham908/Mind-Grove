@@ -38,7 +38,7 @@ const CounsellorCard = (data) => {
     return (
         <div className="Counsel">
             <div className="Counsel-card">
-            <img src={docImage} class="card-img-top-counsellor" alt="..." />
+            <img src={docImage} class="cardimg" alt="..." />
                 <p className="txt" > {data.docName} </p>
                 <p className="txt"> {data.docContact} </p>
                 <p className="txt"> {data.docEmail} </p>
