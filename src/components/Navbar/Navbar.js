@@ -28,13 +28,13 @@ export const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/journal">
-                journal
+              <a class="nav-link" href="/counsellor">
+                Counsellor
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/counsellor">
-                counsellor
+              <a class="nav-link" href="/journal">
+                Journal
               </a>
             </li>
               <button type="button" class="but">

@@ -1,6 +1,6 @@
 import "./Counsellor.css"
 import maleDoc1 from "../images/doc1.jpg"
-import maleDoc2 from "../images/doc2.png"
+import maleDoc2 from "../images/doc5.jpg"
 import femaleDoc1 from "../images/doc3.png"
 import femaleDoc2 from "../images/doc4.png"
 import docInfo from "../data/doctorInfo.json"
@@ -10,7 +10,7 @@ export const Counsellor = () => {
     const docList = docInfo.listDocs
     
         return(
-            <div style={{ display:"flex" }}  >
+            <div style={{ display:"flex", justifyContent:"center" }}  >
                 {
                     docList.map((data, index) => {
                         return(
