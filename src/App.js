@@ -9,6 +9,7 @@ import {Login} from './components/Login/Login'
 import {Signup} from './components/Signup/Signup'
 import {Blog} from "./components/Blog/Blog"
 import { createContext, useState } from 'react';
+import {Footer} from './components/Footer/Footer'
 
 export const  ApplicationContext  = createContext()
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
-
+      <Footer />
     </div>
     </ApplicationContext.Provider>
   );
