@@ -1,9 +1,9 @@
 import "./Footer.css"
-import Youtube from "../../images/icons8-youtube-50.png"
-import Facebook from "../../images/icons8-facebook-50.png"
-import Twitter from "../../images/icons8-twitter-50.png"
-import Instagram from "../../images/icons8-instagram-50.png"
-import Pinterest from "../../images/icons8-pinterest-50.png"
+import Youtube from "../../images/youtube.png"
+import Facebook from "../../images/facebook.png"
+import Twitter from "../../images/twitter.png"
+import Instagram from "../../images/instagram.png"
+import Pinterest from "../../images/pinterest.png"
 
 export const Footer = () => {
     return (
